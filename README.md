@@ -92,7 +92,7 @@ add-in, deployment. **200+ users organically since launch.**
 
 → **[excelgenius.fr](https://excelgenius.fr)**
 
-### 📊 Systematic research lab - crypto markets *(personal project)*
+### 📊 Systematic research lab - crypto markets
 
 A project I built and run on my own time to answer one question: can past
 market data predict which crypto assets outperform? Answering it properly
