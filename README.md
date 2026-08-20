@@ -110,14 +110,14 @@ transfers to any data role:
 - **Watching it**: a web dashboard (FastAPI + JavaScript) shows the current
   state of the data and the results, so problems are visible immediately.
 
-The larger half of the work is the analysis: exploring the data to find a
-behaviour worth trading, then trying to kill it. Roughly 150 exploratory
-notebooks so far, on price and volume patterns, funding, open interest, order
-book depth and seasonality. Most lead nowhere, and the useful output is a
-documented reason not to look there again. A candidate that survives is then
-measured against realistic trading costs, checked for robustness to its own
-settings, and split by year to see whether it holds up or was carried by one
-good period.
+The larger half of the work is the analysis: exploring the data to identify a
+market behaviour worth trading, then setting out to disprove it. The
+exploration covers price and volume patterns, funding rates, open interest,
+order book depth and seasonality. Most avenues lead nowhere, and their useful
+output is a documented reason not to revisit them. A candidate that survives is
+then measured against realistic trading costs, checked for robustness to its
+own settings, and split by year to see whether it holds throughout or was
+carried by one favourable period.
 
 Six signals currently pass that process. Only three are traded: the others were
 dropped for measuring something a signal already in the portfolio covers. The
