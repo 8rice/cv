@@ -107,8 +107,8 @@ transfers to any data role:
   incomplete data before it is saved.
 - **Keeping it up to date**: a scheduler runs the jobs in the right order and
   automatically refreshes anything that has gone stale.
-- **Watching it**: a web dashboard (FastAPI + JavaScript) shows the current
-  state of the data and the results, so problems are visible immediately.
+- **Watching it**: a web dashboard (FastAPI + React) shows the current state of
+  the data and the results, so problems are visible immediately.
 
 The larger half of the work is the analysis: exploring the data to identify a
 market behaviour worth trading, then setting out to disprove it. Price and
@@ -119,10 +119,10 @@ realistic trading costs, checked for robustness to its own settings, and split
 by year to see whether it holds throughout or was carried by one favourable
 period.
 
-Six signals currently pass that process. Only three are traded: the others were
-dropped for measuring something a signal already in the portfolio covers. The
-result is a portfolio whose returns are uncorrelated with the crypto market
-itself.
+Six signals currently pass that process. Only three are traded: the others
+either measure something a signal already in the portfolio covers, or stopped
+working and are held in reserve until the reason is understood. The result is a
+portfolio whose returns are uncorrelated with the crypto market itself.
 
 → **[Read the write-up](https://github.com/8rice/crypto-factor-research)**, a
 visual walkthrough of how I test whether a market signal is real, with charts ·
