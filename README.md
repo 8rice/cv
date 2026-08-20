@@ -29,10 +29,10 @@ benchmarking, plus React/Python environments for training AI agents. Alongside
 that, I have designed and shipped several SaaS products end to end, handling
 the frontend, backend, LLM integration and deployment myself. The main one is
 [ExcelGenius](https://excelgenius.fr), an AI Excel tool now used by 200+
-people. On my own time, I run a systematic research lab on crypto markets, and
-I have written up
-[how I test whether a market signal is real](https://github.com/8rice/crypto-factor-research)
-rather than a coincidence.
+people. On my own time, I run a systematic research lab on crypto markets,
+where most of the work is exploratory analysis: looking for a market behaviour
+that repeats, then trying to prove it is a coincidence. I have written up
+[how I test whether a signal is real](https://github.com/8rice/crypto-factor-research).
 
 **Core stack**: Python (pandas, NumPy, SciPy), SQL, FastAPI,
 JavaScript/React, Plotly. Time series, ETL, REST/WebSocket ingestion,
@@ -110,11 +110,19 @@ transfers to any data role:
 - **Watching it**: a web dashboard (FastAPI + JavaScript) shows the current
   state of the data and the results, so problems are visible immediately.
 
-On top of that sits the analysis itself: measuring whether a signal actually
-predicts returns, testing it against realistic trading costs, and checking the
-result is not an accident of the settings chosen. Six signals currently pass
-that process, three of which are combined into a portfolio whose returns are
-uncorrelated with the crypto market itself.
+The larger half of the work is the analysis: exploring the data to find a
+behaviour worth trading, then trying to kill it. Roughly 150 exploratory
+notebooks so far, on price and volume patterns, funding, open interest, order
+book depth and seasonality. Most lead nowhere, and the useful output is a
+documented reason not to look there again. A candidate that survives is then
+measured against realistic trading costs, checked for robustness to its own
+settings, and split by year to see whether it holds up or was carried by one
+good period.
+
+Six signals currently pass that process. Only three are traded: the others were
+dropped for measuring something a signal already in the portfolio covers. The
+result is a portfolio whose returns are uncorrelated with the crypto market
+itself.
 
 → **[Read the write-up](https://github.com/8rice/crypto-factor-research)**, a
 visual walkthrough of how I test whether a market signal is real, with charts ·
@@ -139,7 +147,7 @@ Electronics, web technologies, computer systems & networks.
 | | |
 |---|---|
 | **Languages** | Python, SQL, JavaScript, HTML/CSS |
-| **Data & analysis** | pandas, NumPy, SciPy, time series, ETL, statistical evaluation |
+| **Data & analysis** | pandas, NumPy, SciPy, time series, ETL, exploratory analysis, hypothesis testing, rank correlation, quantile analysis, robustness testing |
 | **Visualisation** | Plotly, Chart.js, Jasper, Excel |
 | **Backend & web** | FastAPI, React, REST/WebSocket APIs |
 | **Storage** | SQL, SQLite, parquet |
