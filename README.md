@@ -29,9 +29,10 @@ benchmarking, plus React/Python environments for training AI agents. Alongside
 that, I have designed and shipped several SaaS products end to end, handling
 the frontend, backend, LLM integration and deployment myself. The main one is
 [ExcelGenius](https://excelgenius.fr), an AI Excel tool now used by 200+
-people. On my own time, I run a systematic research lab on crypto markets,
-whose evaluation methodology is
-[open source](https://github.com/8rice/crypto-factor-research).
+people. On my own time, I run a systematic research lab on crypto markets, and
+I have written up
+[how I test whether a market signal is real](https://github.com/8rice/crypto-factor-research)
+rather than a coincidence.
 
 **Core stack**: Python (pandas, NumPy, SciPy), SQL, FastAPI,
 JavaScript/React, Plotly. Time series, ETL, REST/WebSocket ingestion,
@@ -111,7 +112,9 @@ transfers to any data role:
 
 On top of that sits the analysis itself: measuring whether a signal actually
 predicts returns, testing it against realistic trading costs, and checking the
-result is not an accident of the settings chosen.
+result is not an accident of the settings chosen. Six signals currently pass
+that process, three of which are combined into a portfolio whose returns are
+uncorrelated with the crypto market itself.
 
 → **[Read the write-up](https://github.com/8rice/crypto-factor-research)**, a
 visual walkthrough of how I test whether a market signal is real, with charts ·
