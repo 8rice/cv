@@ -111,13 +111,14 @@ transfers to any data role:
   state of the data and the results, so problems are visible immediately.
 
 The larger half of the work is the analysis: exploring the data to identify a
-market behaviour worth trading, then setting out to disprove it. The
-exploration covers price and volume patterns, funding rates, open interest,
-order book depth and seasonality. Most avenues lead nowhere, and their useful
-output is a documented reason not to revisit them. A candidate that survives is
-then measured against realistic trading costs, checked for robustness to its
-own settings, and split by year to see whether it holds throughout or was
-carried by one favourable period.
+market behaviour worth trading, then setting out to disprove it. Anything
+observable is fair game, from price and volume patterns to derivatives data
+(funding, open interest), order book and order flow, cross-exchange
+differences, volatility regimes, supply and listing effects, and seasonality.
+Most avenues lead nowhere, and their useful output is a documented reason not
+to revisit them. A candidate that survives is then measured against realistic
+trading costs, checked for robustness to its own settings, and split by year to
+see whether it holds throughout or was carried by one favourable period.
 
 Six signals currently pass that process. Only three are traded: the others were
 dropped for measuring something a signal already in the portfolio covers. The
